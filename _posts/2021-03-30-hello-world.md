@@ -14,19 +14,23 @@ mermaid: true
 
 image:
   src: /assets/blog_res/2021-03-30-hello-world.assets/huoshan.jpg
-  alt: 签约成功
-
+  alt: 签约成ar
 ---
 
-# 感谢关注～ 
+# start
 
+快速排序
 
-这里可以放代码片段噢～
 ```c++
-//代码片段
-int main(){
-  hello world;
+void quick_sort(int q[],int l,int r){
+    if(l>=r) return ;
+   	int i=l-1,j=r+1,x=q[l+r>>1];
+    while(i<j){
+		do i++;while(q[i]<x);
+         do j--;while(q[j]>x);
+        if(i<j) swap(q[i],q[j]);
+    }
+    quick_sort(q,l,j);quick_sort(q,j+1,r);
 }
 ```
 
-![image-20220327184021601](/assets/2021-03-30-hello-world.assets/image-20220327184021601.png)
